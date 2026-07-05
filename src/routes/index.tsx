@@ -1,15 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
-import portrait from "@/assets/henry-portrait.png.asset.json";
-import certWebDev from "@/assets/web-dev-fundamentals.png.asset.json";
-import certDataLit from "@/assets/data-literacy.png.asset.json";
-import certStanfordDS from "@/assets/stanford-data-science.png.asset.json";
-import certStanfordAI from "@/assets/stanford-ai-ml.png.asset.json";
-import certAlxFounder from "@/assets/alx-founder-academy.png.asset.json";
-import certAlxAI from "@/assets/alx-ai-career.png.asset.json";
-import certAlxSE from "@/assets/alx-software-eng.png.asset.json";
-import certIoT from "@/assets/cert-iot.jpg.asset.json";
-import certGmail from "@/assets/cert-gmail.jpg.asset.json";
-import certInfoLit from "@/assets/cert-info-literacy.jpg.asset.json";
+import portrait from "@/assets/henry-portrait.png";
+import certWebDev from "@/assets/web-dev-fundamentals.png";
+import certDataLit from "@/assets/data-literacy.png";
+import certStanfordDS from "@/assets/stanford-data-science.png";
+import certStanfordAI from "@/assets/stanford-ai-ml.png";
+import certAlxFounder from "@/assets/alx-founder-academy.png";
+import certAlxAI from "@/assets/alx-ai-career.png";
+import certAlxSE from "@/assets/alx-software-eng.png";
+import certIoT from "@/assets/cert-iot.jpg";
+import certGmail from "@/assets/cert-gmail.jpg";
+import certInfoLit from "@/assets/cert-info-literacy.jpg";
 import projKasi from "@/assets/project-kasi-dash.jpg";
 import projUnity from "@/assets/project-unity-logistics.jpg";
 import projUnicorn from "@/assets/project-unicorn-finance.jpg";
@@ -99,16 +99,16 @@ const projects = [
 ];
 
 const certifications = [
-  { name: "Web Development Fundamentals", issuer: "IBM SkillsBuild", year: "2026", image: certWebDev.url },
-  { name: "Data Literacy", issuer: "IBM SkillsBuild", year: "2026", image: certDataLit.url },
-  { name: "Fundamentals of Data Science in Precision Medicine and Cloud Computing", issuer: "Stanford University Online", year: "2025", image: certStanfordDS.url },
-  { name: "Fundamentals of AI and ML in Precision Medicine", issuer: "Stanford University Online", year: "2025", image: certStanfordAI.url },
-  { name: "Software Engineering Professional Certificate", issuer: "ALX Africa", year: "2024", image: certAlxSE.url },
-  { name: "AI Career Essentials", issuer: "ALX Africa", year: "2024", image: certAlxAI.url },
-  { name: "Founder Academy Certificate of Completion", issuer: "ALX Ventures", year: "2024", image: certAlxFounder.url },
-  { name: "IoT (Internet of Things) Wireless and Cloud Computing Emerging Technologies", issuer: "Yonsei University, Coursera", year: "2026", image: certIoT.url },
-  { name: "Basic Information Literacy", issuer: "The State University of New York, Coursera", year: "2026", image: certInfoLit.url },
-  { name: "Gmail", issuer: "Google Cloud, Coursera", year: "2026", image: certGmail.url },
+  { name: "Web Development Fundamentals", issuer: "IBM SkillsBuild", year: "2026", image: certWebDev },
+  { name: "Data Literacy", issuer: "IBM SkillsBuild", year: "2026", image: certDataLit },
+  { name: "Fundamentals of Data Science in Precision Medicine and Cloud Computing", issuer: "Stanford University Online", year: "2025", image: certStanfordDS },
+  { name: "Fundamentals of AI and ML in Precision Medicine", issuer: "Stanford University Online", year: "2025", image: certStanfordAI },
+  { name: "Software Engineering Professional Certificate", issuer: "ALX Africa", year: "2024", image: certAlxSE },
+  { name: "AI Career Essentials", issuer: "ALX Africa", year: "2024", image: certAlxAI },
+  { name: "Founder Academy Certificate of Completion", issuer: "ALX Ventures", year: "2024", image: certAlxFounder },
+  { name: "IoT (Internet of Things) Wireless and Cloud Computing Emerging Technologies", issuer: "Yonsei University, Coursera", year: "2026", image: certIoT },
+  { name: "Basic Information Literacy", issuer: "The State University of New York, Coursera", year: "2026", image: certInfoLit },
+  { name: "Gmail", issuer: "Google Cloud, Coursera", year: "2026", image: certGmail },
 ];
 
 const stacks = {
@@ -216,7 +216,7 @@ function Hero() {
           <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[2rem] bg-ember/60" />
           <div className="relative overflow-hidden rounded-[2rem] border border-border">
             <img
-              src={portrait.url}
+              src={portrait}
               alt="Henry Ndlovu, software engineer, professional headshot"
               className="aspect-square w-full object-cover"
             />
