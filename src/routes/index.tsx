@@ -417,24 +417,6 @@ function Certifications() {
             </figure>
           ))}
         </div>
-
-        <div className="mt-16">
-          <p className="font-mono text-xs uppercase tracking-widest text-ember">
-            Also completed
-          </p>
-          <ul className="mt-4 divide-y divide-border border-y border-border">
-            {additionalCerts.map((c) => (
-              <li
-                key={c.name}
-                className="grid grid-cols-[auto_1fr_auto] items-baseline gap-6 py-4 text-base"
-              >
-                <span className="font-mono text-sm text-ember">{c.year}</span>
-                <span className="font-display text-xl">{c.name}</span>
-                <span className="text-right text-sm text-muted-foreground">{c.issuer}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
       </div>
     </section>
   );
