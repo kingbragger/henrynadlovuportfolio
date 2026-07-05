@@ -295,33 +295,46 @@ function Projects() {
               href={p.repo}
               target="_blank"
               rel="noreferrer"
-              className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all hover:border-ember/60 hover:bg-card/80"
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-ember/60"
             >
-              <div className="absolute right-6 top-6 font-mono text-xs text-muted-foreground">
-                {String(i + 1).padStart(2, "0")}
+              <div className="relative aspect-[16/10] overflow-hidden bg-ink">
+                <img
+                  src={p.image}
+                  alt={`${p.name}, ${p.tag} cover artwork`}
+                  loading="lazy"
+                  width={1280}
+                  height={800}
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+                <span className="absolute right-4 top-4 rounded-full bg-ink/80 px-2.5 py-1 font-mono text-[10px] tracking-widest text-muted-foreground backdrop-blur">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
               </div>
-              <div>
-                <p className="font-mono text-xs uppercase tracking-widest text-ember">
-                  {p.tag}
-                </p>
-                <h3 className="mt-3 font-display text-3xl">{p.name}</h3>
-                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                  {p.blurb}
-                </p>
-              </div>
-              <div className="mt-8 flex flex-wrap gap-2">
-                {p.stack.map((s) => (
-                  <span
-                    key={s}
-                    className="rounded-full border border-border px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-muted-foreground"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
-              <div className="mt-6 flex items-center gap-2 text-sm text-ember opacity-0 transition-opacity group-hover:opacity-100">
-                View repository
-                <span aria-hidden>→</span>
+              <div className="flex flex-1 flex-col justify-between p-8 pt-6">
+                <div>
+                  <p className="font-mono text-xs uppercase tracking-widest text-ember">
+                    {p.tag}
+                  </p>
+                  <h3 className="mt-3 font-display text-3xl">{p.name}</h3>
+                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                    {p.blurb}
+                  </p>
+                </div>
+                <div className="mt-8 flex flex-wrap gap-2">
+                  {p.stack.map((s) => (
+                    <span
+                      key={s}
+                      className="rounded-full border border-border px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-muted-foreground"
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
+                <div className="mt-6 flex items-center gap-2 text-sm text-ember opacity-0 transition-opacity group-hover:opacity-100">
+                  View repository
+                  <span aria-hidden>→</span>
+                </div>
               </div>
             </a>
           ))}
