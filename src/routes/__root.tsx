@@ -82,7 +82,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Portfolio of Henry Ndlovu, a South Africa based software engineer building full stack web, AI, cloud and data products.",
       },
       { name: "author", content: "Henry Ndlovu" },
-      { property: "og:title", content: "Henry Ndlovu, Software Engineer" },
+      { property: "og:title", content: "Henry Ndlovu, Software Engineer and Full Stack Developer" },
       {
         property: "og:description",
         content:
@@ -90,6 +90,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Henry Ndlovu, Software Engineer and Full Stack Developer" },
+      { name: "description", content: "Portfolio of Henry Ndlovu, a South Africa based software engineer building full stack web, AI, cloud and data products." },
+      { property: "og:description", content: "Portfolio of Henry Ndlovu, a South Africa based software engineer building full stack web, AI, cloud and data products." },
+      { name: "twitter:description", content: "Portfolio of Henry Ndlovu, a South Africa based software engineer building full stack web, AI, cloud and data products." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/85a41d4c-4bb4-441f-bebf-f054cfe8647c" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/85a41d4c-4bb4-441f-bebf-f054cfe8647c" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
