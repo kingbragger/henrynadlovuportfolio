@@ -7,6 +7,9 @@ import certStanfordAI from "@/assets/stanford-ai-ml.png.asset.json";
 import certAlxFounder from "@/assets/alx-founder-academy.png.asset.json";
 import certAlxAI from "@/assets/alx-ai-career.png.asset.json";
 import certAlxSE from "@/assets/alx-software-eng.png.asset.json";
+import certIoT from "@/assets/cert-iot.jpg.asset.json";
+import certGmail from "@/assets/cert-gmail.jpg.asset.json";
+import certInfoLit from "@/assets/cert-info-literacy.jpg.asset.json";
 import projKasi from "@/assets/project-kasi-dash.jpg";
 import projUnity from "@/assets/project-unity-logistics.jpg";
 import projUnicorn from "@/assets/project-unicorn-finance.jpg";
@@ -103,12 +106,9 @@ const certifications = [
   { name: "Software Engineering Professional Certificate", issuer: "ALX Africa", year: "2024", image: certAlxSE.url },
   { name: "AI Career Essentials", issuer: "ALX Africa", year: "2024", image: certAlxAI.url },
   { name: "Founder Academy Certificate of Completion", issuer: "ALX Ventures", year: "2024", image: certAlxFounder.url },
-];
-
-const additionalCerts = [
-  { name: "IoT Wireless and Cloud Computing Emerging Technologies", issuer: "Yonsei University, Coursera", year: "2026" },
-  { name: "Basic Information Literacy", issuer: "State University of New York, Coursera", year: "2026" },
-  { name: "Google Workspace, Gmail", issuer: "Google Cloud, Coursera", year: "2026" },
+  { name: "IoT (Internet of Things) Wireless and Cloud Computing Emerging Technologies", issuer: "Yonsei University, Coursera", year: "2026", image: certIoT.url },
+  { name: "Basic Information Literacy", issuer: "The State University of New York, Coursera", year: "2026", image: certInfoLit.url },
+  { name: "Gmail", issuer: "Google Cloud, Coursera", year: "2026", image: certGmail.url },
 ];
 
 const stacks = {
