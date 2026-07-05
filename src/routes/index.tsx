@@ -1,5 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import portrait from "@/assets/henry-portrait.png.asset.json";
+import certWebDev from "@/assets/web-dev-fundamentals.png.asset.json";
+import certDataLit from "@/assets/data-literacy.png.asset.json";
+import certStanfordDS from "@/assets/stanford-data-science.png.asset.json";
+import certStanfordAI from "@/assets/stanford-ai-ml.png.asset.json";
+import certAlxFounder from "@/assets/alx-founder-academy.png.asset.json";
+import certAlxAI from "@/assets/alx-ai-career.png.asset.json";
+import certAlxSE from "@/assets/alx-software-eng.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
