@@ -216,7 +216,7 @@ function Hero() {
           <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[2rem] bg-ember/60" />
           <div className="relative overflow-hidden rounded-[2rem] border border-border">
             <img
-              src={portrait}
+              src={portrait.url}
               alt="Henry Ndlovu, software engineer, professional headshot"
               className="aspect-square w-full object-cover"
             />
