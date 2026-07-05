@@ -7,6 +7,14 @@ import certStanfordAI from "@/assets/stanford-ai-ml.png.asset.json";
 import certAlxFounder from "@/assets/alx-founder-academy.png.asset.json";
 import certAlxAI from "@/assets/alx-ai-career.png.asset.json";
 import certAlxSE from "@/assets/alx-software-eng.png.asset.json";
+import projKasi from "@/assets/project-kasi-dash.jpg";
+import projUnity from "@/assets/project-unity-logistics.jpg";
+import projUnicorn from "@/assets/project-unicorn-finance.jpg";
+import projSafeMed from "@/assets/project-safemed.jpg";
+import projDream from "@/assets/project-dreamhouse.jpg";
+import projTime from "@/assets/project-time-tracker.jpg";
+import projBet from "@/assets/project-bet-intelligence.jpg";
+import projIelts from "@/assets/project-ielts.jpg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -20,6 +28,7 @@ const projects = [
       "Full stack delivery dashboard with live order tracking, driver assignment, role based access and analytics.",
     stack: ["React", "TypeScript", "Node.js", "PostgreSQL"],
     repo: "https://github.com/kingbragger/Kasi-Dash",
+    image: projKasi,
   },
   {
     name: "Unity Logistics and Delivery",
@@ -28,6 +37,7 @@ const projects = [
       "Platform connecting customers, drivers and business operations with real time dispatch and route management.",
     stack: ["React", "TypeScript", "Supabase"],
     repo: "https://github.com/kingbragger/unity-logistics-and-delivery-mvp",
+    image: projUnity,
   },
   {
     name: "Unicorn Finance Hub",
@@ -36,6 +46,7 @@ const projects = [
       "Personal finance tracker with budgeting, transaction categorisation, charts and secure authentication.",
     stack: ["React", "TypeScript", "Supabase"],
     repo: "https://github.com/kingbragger/Unicorn-Finance-Hub",
+    image: projUnicorn,
   },
   {
     name: "SafeMed Dashboard",
@@ -44,6 +55,7 @@ const projects = [
       "Healthcare dashboard for managing patient information, prescriptions and clinical workflows.",
     stack: ["React", "TypeScript", "PostgreSQL"],
     repo: "https://github.com/kingbragger/SafeMedDashboard",
+    image: projSafeMed,
   },
   {
     name: "DreamHouse",
@@ -52,6 +64,7 @@ const projects = [
       "Property and housing application with rich search, media galleries and enquiry management.",
     stack: ["TypeScript", "React", "REST APIs"],
     repo: "https://github.com/kingbragger/Dreamhouse",
+    image: projDream,
   },
   {
     name: "Design Time Tracker",
@@ -60,6 +73,7 @@ const projects = [
       "Project time tracking application with reporting, billing summaries and team dashboards.",
     stack: ["TypeScript", "React", "Node.js"],
     repo: "https://github.com/kingbragger/DesignTimeTracker",
+    image: projTime,
   },
   {
     name: "Bet Intelligence",
@@ -68,6 +82,7 @@ const projects = [
       "Python analytics engine performing statistical modelling and predictive analysis on sports data.",
     stack: ["Python", "Pandas", "NumPy", "SciPy"],
     repo: "https://github.com/kingbragger/BetIntelligence",
+    image: projBet,
   },
   {
     name: "IELTS Speaking Trainer",
@@ -76,6 +91,7 @@ const projects = [
       "AI assisted speaking practice application scoring fluency, coherence and pronunciation for IELTS candidates.",
     stack: ["React", "TypeScript", "LLM APIs"],
     repo: "https://github.com/kingbragger/IELTSSpeakTrainer2.0",
+    image: projIelts,
   },
 ];
 
