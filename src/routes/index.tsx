@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import portrait from "@/assets/henry-portrait.png";
+import portrait from "@/assets/henry-portrait.png.asset.json";
 import certWebDev from "@/assets/web-dev-fundamentals.png.asset.json";
 import certDataLit from "@/assets/data-literacy.png.asset.json";
 import certStanfordDS from "@/assets/stanford-data-science.png.asset.json";
