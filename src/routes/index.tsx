@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import portrait from "@/assets/henry-portrait.png";
+import portrait from "@/assets/henry-portrait.png.asset.json";
 import certWebDev from "@/assets/web-dev-fundamentals.png.asset.json";
 import certDataLit from "@/assets/data-literacy.png.asset.json";
 import certStanfordDS from "@/assets/stanford-data-science.png.asset.json";
@@ -216,7 +216,7 @@ function Hero() {
           <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[2rem] bg-ember/60" />
           <div className="relative overflow-hidden rounded-[2rem] border border-border">
             <img
-              src={portrait}
+              src={portrait.url}
               alt="Henry Ndlovu, software engineer, professional headshot"
               className="aspect-square w-full object-cover"
             />
