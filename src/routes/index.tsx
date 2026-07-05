@@ -80,16 +80,19 @@ const projects = [
 ];
 
 const certifications = [
-  { name: "Web Development Fundamentals", issuer: "IBM SkillsBuild", year: "2026" },
-  { name: "Data Literacy", issuer: "IBM SkillsBuild", year: "2026" },
+  { name: "Web Development Fundamentals", issuer: "IBM SkillsBuild", year: "2026", image: certWebDev.url },
+  { name: "Data Literacy", issuer: "IBM SkillsBuild", year: "2026", image: certDataLit.url },
+  { name: "Fundamentals of Data Science in Precision Medicine and Cloud Computing", issuer: "Stanford University Online", year: "2025", image: certStanfordDS.url },
+  { name: "Fundamentals of AI and ML in Precision Medicine", issuer: "Stanford University Online", year: "2025", image: certStanfordAI.url },
+  { name: "Software Engineering Professional Certificate", issuer: "ALX Africa", year: "2024", image: certAlxSE.url },
+  { name: "AI Career Essentials", issuer: "ALX Africa", year: "2024", image: certAlxAI.url },
+  { name: "Founder Academy Certificate of Completion", issuer: "ALX Ventures", year: "2024", image: certAlxFounder.url },
+];
+
+const additionalCerts = [
   { name: "IoT Wireless and Cloud Computing Emerging Technologies", issuer: "Yonsei University, Coursera", year: "2026" },
   { name: "Basic Information Literacy", issuer: "State University of New York, Coursera", year: "2026" },
   { name: "Google Workspace, Gmail", issuer: "Google Cloud, Coursera", year: "2026" },
-  { name: "Fundamentals of Data Science in Precision Medicine and Cloud Computing", issuer: "Stanford University Online", year: "2025" },
-  { name: "Fundamentals of AI and ML in Precision Medicine", issuer: "Stanford University Online", year: "2025" },
-  { name: "Software Engineering Professional Certificate", issuer: "ALX Africa", year: "2024" },
-  { name: "AI Career Essentials", issuer: "ALX Africa", year: "2024" },
-  { name: "Founder Academy Certificate of Completion", issuer: "ALX Ventures", year: "2024" },
 ];
 
 const stacks = {
