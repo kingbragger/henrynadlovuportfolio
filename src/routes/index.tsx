@@ -1,4 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Eye } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import portrait from "@/assets/henry-portrait.png";
 import certWebDev from "@/assets/web-dev-fundamentals.png";
 import certDataLit from "@/assets/data-literacy.png";
@@ -393,28 +401,55 @@ function Certifications() {
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {certifications.map((c) => (
-            <figure
-              key={c.name}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-ember/60"
-            >
-              <div className="relative aspect-[4/3] overflow-hidden bg-ink">
-                <img
-                  src={c.image}
-                  alt={`${c.name} certificate awarded to Henry Ndlovu by ${c.issuer}`}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                />
-                <span className="absolute left-3 top-3 rounded-full bg-ink/80 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest text-ember backdrop-blur">
-                  {c.year}
-                </span>
-              </div>
-              <figcaption className="flex flex-1 flex-col justify-between gap-3 p-5">
-                <h3 className="font-display text-xl leading-tight">{c.name}</h3>
-                <p className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
-                  {c.issuer}
-                </p>
-              </figcaption>
-            </figure>
+            <Dialog key={c.name}>
+              <figure className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all hover:border-ember/60">
+                <DialogTrigger asChild>
+                  <button
+                    type="button"
+                    className="relative aspect-[4/3] cursor-zoom-in overflow-hidden bg-ink text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-ember focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                    aria-label={`Preview ${c.name} certificate`}
+                  >
+                    <img
+                      src={c.image}
+                      alt={`${c.name} certificate awarded to Henry Ndlovu by ${c.issuer}`}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    />
+                    <span className="absolute left-3 top-3 rounded-full bg-ink/80 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest text-ember backdrop-blur">
+                      {c.year}
+                    </span>
+                    <span className="absolute right-3 top-3 grid h-9 w-9 place-items-center rounded-full bg-ink/80 text-ember opacity-0 backdrop-blur transition-opacity group-hover:opacity-100 group-focus-within:opacity-100">
+                      <Eye className="h-4 w-4" aria-hidden="true" />
+                    </span>
+                  </button>
+                </DialogTrigger>
+                <figcaption className="flex flex-1 flex-col justify-between gap-3 p-5">
+                  <h3 className="font-display text-xl leading-tight">{c.name}</h3>
+                  <p className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+                    {c.issuer}
+                  </p>
+                </figcaption>
+              </figure>
+              <DialogContent className="max-h-[92vh] max-w-5xl overflow-hidden border-border bg-card p-0 sm:rounded-2xl">
+                <div className="grid max-h-[92vh] grid-rows-[auto_1fr]">
+                  <div className="border-b border-border px-5 py-4 pr-14">
+                    <DialogTitle className="font-display text-2xl leading-tight">
+                      {c.name}
+                    </DialogTitle>
+                    <DialogDescription className="mt-1 font-mono text-[11px] uppercase tracking-widest">
+                      {c.issuer}, {c.year}
+                    </DialogDescription>
+                  </div>
+                  <div className="overflow-auto bg-ink/70 p-3 sm:p-6">
+                    <img
+                      src={c.image}
+                      alt={`${c.name} certificate full preview`}
+                      className="mx-auto max-h-[72vh] w-auto max-w-full rounded-lg border border-border bg-background object-contain"
+                    />
+                  </div>
+                </div>
+              </DialogContent>
+            </Dialog>
           ))}
         </div>
       </div>
