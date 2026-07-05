@@ -462,13 +462,29 @@ function Contact() {
             ndlovuhenry73@gmail.com
           </a>
           <a
-            href="https://wa.me/27840640853"
-            target="_blank"
-            rel="noreferrer"
+            href="mailto:unity@kasidash.co.za"
             className="rounded-full border border-border px-7 py-4 text-sm font-medium transition-colors hover:bg-secondary"
           >
-            WhatsApp, +27 84 064 0853
+            unity@kasidash.co.za
           </a>
+        </div>
+        <div className="mx-auto mt-12 grid max-w-2xl gap-4 rounded-2xl border border-border bg-secondary/30 p-6 text-left md:grid-cols-2">
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Enterprise Name</p>
+            <p className="mt-1 font-display text-lg">KASIDASH AND BUILDFORGE</p>
+          </div>
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Registration Number</p>
+            <p className="mt-1 font-display text-lg">2026 / 362826 / 07</p>
+          </div>
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Registration Date</p>
+            <p className="mt-1 font-display text-lg">07/05/2026</p>
+          </div>
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">Company Type</p>
+            <p className="mt-1 font-display text-lg">Private Company</p>
+          </div>
         </div>
         <div className="mx-auto mt-16 flex max-w-lg justify-center gap-8 border-t border-border pt-8 font-mono text-xs uppercase tracking-widest text-muted-foreground">
           <a href="https://github.com/kingbragger" target="_blank" rel="noreferrer" className="hover:text-ember">
