@@ -467,6 +467,14 @@ function Contact() {
           >
             unity@kasidash.co.za
           </a>
+          <a
+            href="https://wa.me/27840640853"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full border border-border px-7 py-4 text-sm font-medium transition-colors hover:bg-secondary"
+          >
+            WhatsApp, +27 84 064 0853
+          </a>
         </div>
         <div className="mx-auto mt-12 grid max-w-2xl gap-4 rounded-2xl border border-border bg-secondary/30 p-6 text-left md:grid-cols-2">
           <div>
