@@ -121,6 +121,7 @@ const stacks = {
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <Splash />
       <Nav />
       <Hero />
       <About />
@@ -132,6 +133,63 @@ function Index() {
     </div>
   );
 }
+
+function Splash() {
+  return (
+    <div
+      aria-hidden
+      className="fixed inset-0 z-[100] flex items-center justify-center overflow-hidden bg-ink"
+      style={{
+        animation: "splash-fade 2.6s ease-in-out forwards",
+      }}
+    >
+      {/* Ember glow */}
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute left-1/2 top-1/2 h-[70vmin] w-[70vmin] -translate-x-1/2 -translate-y-1/2 rounded-full bg-ember/25 blur-[120px]" />
+        <div
+          className="absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ember shadow-[0_0_40px_20px_rgba(230,120,60,0.5)]"
+          style={{ animation: "ember-orbit 2.2s linear infinite", transformOrigin: "-160px center" }}
+        />
+      </div>
+
+      {/* Grid lines */}
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.08]"
+        style={{
+          backgroundImage:
+            "linear-gradient(var(--cream) 1px, transparent 1px), linear-gradient(90deg, var(--cream) 1px, transparent 1px)",
+          backgroundSize: "80px 80px",
+        }}
+      />
+
+      <div className="relative text-center">
+        <p
+          className="mb-4 font-mono text-[10px] uppercase tracking-[0.5em] text-ember"
+          style={{ animation: "splash-tag 2s ease-out both" }}
+        >
+          Portfolio, 2026
+        </p>
+        <h1
+          className="font-display text-[18vw] leading-none text-cream md:text-[10rem]"
+          style={{ animation: "splash-name-in 1.6s cubic-bezier(0.2, 0.8, 0.2, 1) both" }}
+        >
+          HENRY <span className="italic text-ember">NDLOVU</span>
+        </h1>
+        <div className="mx-auto mt-6 h-[2px] w-[min(80vw,420px)] origin-left bg-ember"
+          style={{ animation: "splash-bar 1.6s cubic-bezier(0.7, 0, 0.3, 1) 0.2s both" }}
+        />
+        <p
+          className="mt-6 font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground"
+          style={{ animation: "splash-tag 2s ease-out 0.6s both" }}
+        >
+          Software Engineer, Pretoria ZA
+        </p>
+      </div>
+    </div>
+  );
+}
+
+
 
 function Nav() {
   return (
