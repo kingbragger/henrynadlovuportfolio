@@ -95,9 +95,33 @@
 
 @utility font-display {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
+
+@keyframes splash-fade {
+  0%, 70% { opacity: 1; visibility: visible; }
+  100% { opacity: 0; visibility: hidden; }
+}
+@keyframes splash-name-in {
+  0% { opacity: 0; transform: translateY(30px); letter-spacing: 0.3em; }
+  60% { opacity: 1; transform: translateY(0); letter-spacing: -0.02em; }
+  100% { opacity: 1; transform: translateY(0); letter-spacing: -0.02em; }
+}
+@keyframes splash-bar {
+  0% { transform: scaleX(0); }
+  70% { transform: scaleX(1); }
+  100% { transform: scaleX(1); }
+}
+@keyframes splash-tag {
+  0%, 20% { opacity: 0; transform: translateY(10px); }
+  50%, 100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes ember-orbit {
+  0% { transform: rotate(0deg) translateX(0) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(0) rotate(-360deg); }
+}
+
 
 @utility grain {
   position: relative;
